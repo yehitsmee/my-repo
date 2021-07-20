@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">{{ title }}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+          aria-controls="navbarsExampleDefault" aria-expanded="false"
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbars">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="dropdown-administrator" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Swagger</a>
+        <ul class="dropdown-menu" aria-labelledby="dropdown-admin">
+          <li>
+            <a class="dropdown-item" [routerLink]="['/swagger']">
+              <i class="fas fa-fw fa-book" aria-hidden="true"></i>
+              <span>Swagger UI</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main role="main">
+
+  <div class="jumbotron">
+    <div class="container">
+      <h3> Angular + Swagger-UI example app</h3>
+    </div>
+  </div>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+    <hr>
+  </div>
+
+</main>
+<div>
+  <h3>Basic Information</h3>
+<p>Swagger UI allows anyone — be it your development team or your end consumers — to visualize and interact with the API’s resources without having any of the implementation logic in place. 
+  It’s automatically generated from your OpenAPI (formerly known as Swagger) Specification, with the visual documentation making it easy for back end implementation and client side consumption.</p>
+</div>
+
+<footer class="container">
+<p><a href="https://twitter.com/ChaithraNayak8">@ChaithraNayak8</a></p>
+</footer>
